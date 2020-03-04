@@ -1,0 +1,226 @@
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+input,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+textarea,
+article,
+aside,
+audio,
+canvas,
+figure,
+footer,
+header,
+mark,
+menu,
+nav,
+section,
+time,
+video {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+article,
+aside,
+dialog,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+blockquote {
+  display: block;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  border: 0 none;
+  display: block;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+strong,
+em,
+i {
+  font-style: normal;
+  font-weight: normal;
+}
+ins {
+  text-decoration: underline;
+}
+del {
+  text-decoration: line-through;
+}
+mark {
+  background: none;
+}
+input::-ms-clear {
+  display: none !important;
+}
+body {
+  font: 16px/1.5 \5fae\8f6f\96c5\9ed1, \5b8b\4f53, "Hiragino Sans GB", STHeiti,
+    "WenQuanYi Micro Hei", "Droid Sans Fallback", SimSun, sans-serif;
+  background: #fff;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/* 协助垂直对齐 */
+.zy_czMid:after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+/* 防止高度塌陷 */
+.zy_tx:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+/* 弹性盒居中 */
+.alignCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alignCenterH {
+  display: flex;
+  justify-content: center;
+}
+
+.alignCenterV {
+  display: flex;
+  align-items: center;
+}
+
+/* 边框 */
+.borderTop,
+.borderBottom,
+.borderLeft,
+.borderRight {
+  position: relative;
+}
+
+.borderTop:before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: #e8e8e8;
+  transform: scaleY(0.5);
+  position: absolute;
+  top: 0px;
+}
+
+.borderBottom:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: #e8e8e8;
+  transform: scaleY(0.5);
+  position: absolute;
+  bottom: 0px;
+}
+
+.borderLeft:before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 1px;
+  background-color: #e8e8e8;
+  transform: scaleX(0.5);
+  position: absolute;
+  left: 0px;
+}
+
+.borderRight:after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 1px;
+  background-color: #e8e8e8;
+  transform: scaleX(0.5);
+  position: absolute;
+  right: 0px;
+  top: 0;
+}
+
+/* 文本溢出显示省略号 */
+.textOver {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.textsOver {
+  overflow: hidden;
+  text-overflow: hidden;
+  word-wrap: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: nowrap !important;
+}
